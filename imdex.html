@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latias Info</title>
+  <link rel="icon" type="image/png" href="https://riley.cat/latias.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #eeeeff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transform: scale(0.85);
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease;
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    header {
+      background-color: #ffffff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      background: linear-gradient(270deg, #bd4141, #ff6262, #eeeeff);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 4s ease infinite;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-top: 0.5rem;
+      border-radius: 12px;
+    }
+
+    .profile-badge {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+
+    h2 {
+      color: #bd4141;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: #ff6262;
+      color: white;
+      border-radius: 15px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .separator {
+      border-top: 3px dashed #eeeeff;
+      margin: 1.2rem 0;
+    }
+
+    .pokedex-entry {
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    .info-table td {
+      padding: 0.5rem;
+      border-bottom: 1px solid #eeeeff;
+    }
+
+    .type-box {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      color: white;
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    .dragon { background-color: #7038F8; }
+    .psychic { background-color: #F85888; }
+    a { color: white; text-decoration: underline; }
+
+    .ruby { background-color: #A00000; }
+    .sapphire { background-color: #0000A0; }
+    .emerald { background-color: #00A000; }
+    .firered { background-color: #FF7327; }
+    .leafgreen { background-color: #2ECC71; }
+    .heartgold { background-color: #DAA520; }
+    .soulsilver { background-color: #A8A8C0; }
+    .black2 { background-color: #303030; }
+    .white2 { background-color: #CCCCCC; color: #000; }
+    .omegaruby { background-color: #B22222; }
+    .alphasapphire { background-color: #1E90FF; }
+    .sun { background-color: #FDB813; }
+    .moon { background-color: #6B5B95; }
+    .sword { background-color: #4169E1; }
+    .shield { background-color: #C71585; }
+    .scarlet { background-color: #B22222; }
+    .violet { background-color: #8A2BE2; }
+    .shiningpearl { background-color: #de4f7a; }
+    .brilliantdiamond { background-color: #8471bd; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Latias</h1>
+      <img src="https://riley.cat/latias.png" alt="Latias image" />
+      <a href="https://riley.cat" class="profile-badge" title="Go to riley.cat">
+        <img src="https://riley.cat/pfp.gif" alt="Profile badge" />
+      </a>
+    </header>
+    <main>
+      <section class="section">
+        <h2>General Info</h2>
+        <table class="info-table">
+          <tr><td><strong>National №</strong></td><td>0380</td></tr>
+          <tr><td><strong>Type</strong></td><td><span class="type-box dragon">Dragon</span><span class="type-box psychic">Psychic</span></td></tr>
+          <tr><td><strong>Species</strong></td><td>Eon Pokémon</td></tr>
+          <tr><td><strong>Height</strong></td><td>1.4 m (4′07″)</td></tr>
+          <tr><td><strong>Weight</strong></td><td>40.0 kg (88.2 lbs)</td></tr>
+          <tr><td><strong>Abilities</strong></td><td>1. <a href="#">Levitate</a></td></tr>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Base Stats</h2>
+        <ul>
+          <li>HP: 80</li>
+          <li>Attack: 80</li>
+          <li>Defense: 90</li>
+          <li>Sp. Atk: 110</li>
+          <li>Sp. Def: 130</li>
+          <li>Speed: 110</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Games Latias Appears In</h2>
+        <ul>
+          <li><span class="game-tag ruby">Ruby </span> <span class="game-tag sapphire">Sapphire </span> <span class="game-tag emerald">Emerald</span></li>
+          <li><span class="game-tag firered">FireRed</span> <span class="game-tag leafgreen">LeafGreen</span></li>
+          <li><span class="game-tag heartgold">HeartGold</span> <span class="game-tag soulsilver">SoulSilver</span></li>
+          <li><span class="game-tag black2">Black 2</span> <span class="game-tag white2">White 2</span></li>
+          <li><span class="game-tag omegaruby">Omega Ruby</span> <span class="game-tag alphasapphire">Alpha Sapphire</span></li>
+          <li><span class="game-tag sun">Sun</span> <span class="game-tag moon">Moon</span> (Poké Transporter)</li>
+          <li><span class="game-tag sword">Sword</span> <span class="game-tag shield">Shield</span> (DLC)</li>
+          <li><span class="game-tag scarlet">Scarlet</span> <span class="game-tag violet">Violet</span> (DLC, HOME transfer)</li>
+        </ul>
+      </section>
+
+      <!-- Pokedex entries inserted below -->
+      <section class="section">
+        <h2>Pokedex Entries</h2>
+        <ul>
+          <li class="pokedex-entry"><strong class="ruby">Ruby:</strong> LATIAS is highly sensitive to the emotions of people. If it senses any hostility, this POKéMON ruffles the feathers all over its body and cries shrilly to intimidate the foe.</li>
+          <li class="pokedex-entry"><strong class="sapphire">Sapphire:</strong> LATIAS is highly intelligent and capable of understanding human speech. It is covered with a glass-like down. The POKéMON enfolds its body with its down and refracts light to alter its appearance.</li>
+          <li class="pokedex-entry"><strong class="firered">FireRed:</strong> It can telepathically communicate with people. It changes its appearance using its down that refracts light.</li>
+          <li class="pokedex-entry"><strong class="leafgreen">LeafGreen:</strong> It can telepathically communicate with people. It changes its appearance using its down that refracts light.</li>
+          <li class="pokedex-entry"><strong class="emerald">Emerald:</strong> They make a small herd of only several members. They rarely make contact with people or other POKéMON. They disappear if they sense enemies.</li>
+          <li class="pokedex-entry"><strong>Diamond</strong>, <strong>Pearl</strong>, <strong>Platinum:</strong> Its body is covered with a down that can refract light in such a way that it becomes invisible.</li>
+          <li class="pokedex-entry"><strong class="heartgold">HeartGold:</strong> It communicates using telepathy. Its body is covered in down that refracts light to make it invisible.</li>
+          <li class="pokedex-entry"><strong class="soulsilver">SoulSilver:</strong> It communicates using telepathy. Its body is covered in down that refracts light to make it invisible.</li>
+          <li class="pokedex-entry"><strong class="black2">Black</strong>, <strong>White</strong>, <strong class="black2">Black 2</strong>, <strong class="white2">White 2:</strong> Its body is covered with a down that can refract light in such a way that it becomes invisible.</li>
+          <li class="pokedex-entry"><strong class="omegaruby">Omega Ruby:</strong> Latias is highly sensitive to the emotions of people. If it senses any hostility, this Pokémon ruffles the feathers all over its body and cries shrilly to intimidate the foe.</li>
+          <li class="pokedex-entry"><strong class="alphasapphire">Alpha Sapphire:</strong> Latias is highly intelligent and capable of understanding human speech. It is covered with a glass-like down. The Pokémon enfolds its body with its down and refracts light to alter its appearance.</li>
+          <li class="pokedex-entry"><strong class="brilliantdiamond">Brilliant Diamond</strong> Its body is covered with a down that can refract light in such a way that it becomes invisible.</li>
+          <li class="pokedex-entry"><strong class="shiningpearl">Shining Pearl:</strong> Its body is covered with a down that can refract light in such a way that it becomes invisible.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
